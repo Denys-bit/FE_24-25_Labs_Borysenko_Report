@@ -1,0 +1,55 @@
+.project-card {
+    width: 375px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.project-card .content {
+    padding: 25px;
+}
+.project-card .img {
+    width: 100%;
+}
+.project-card .name {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.project-card .desc {
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+.project-card .stack {
+    font-weight: 300;
+    font-size: 14px;
+    color: #42446E;
+    margin-bottom: 20px;
+}
+.project-card .stack b {
+    font-weight: 400;
+}
+.project-card .actions {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.project-card .actions .link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: underline;
+    color: #000000;
+}
+.project-card .actions .icon {
+    width: 20px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}

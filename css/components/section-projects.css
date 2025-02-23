@@ -1,0 +1,10 @@
+.projects-section .inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.projects-section .inner > * {
+    flex-shrink: 0;
+    width: 32%;
+    margin-bottom: 30px;
+}
