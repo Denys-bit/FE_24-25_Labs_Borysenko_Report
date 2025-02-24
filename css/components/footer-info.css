@@ -1,0 +1,19 @@
+.footer {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: #42446E;
+}
+.icon-footer {
+
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info {
+    margin: 50px 50px 50px 0;
+}

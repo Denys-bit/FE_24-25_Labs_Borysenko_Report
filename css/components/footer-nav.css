@@ -1,0 +1,8 @@
+.list-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.nav .list-footer .item-footer {
+    margin: 60px 52px 60px 0;
+}
