@@ -1,12 +1,22 @@
 .section {
     margin-bottom: 160px;
 }
+
+.section__medium_mb {
+    margin-bottom: 64px;
+}
+
+.section__small_mb {
+    margin-bottom: 38px;
+}
+
 .section .title {
     margin-bottom: 45px;
     padding-left: 10%;
     padding-right: 10%;
     text-align: center;
 }
+
 .section .subtitle {
     margin-bottom: 90px;
     font-weight: 400;
@@ -15,4 +25,22 @@
     padding-left: 10%;
     padding-right: 10%;
     text-align: center;
+}
+
+.section__medium_mb .about-me__title,
+.section__small_mb .about-me__title {
+    margin-bottom: 38px;
+    padding: 0;
+    text-align: start;
+}
+
+.section__medium_mb .about-me__subtitle,
+.section__small_mb .about-me__subtitle {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.444;
+    padding: 0;
+    width: 786px;
+    text-align: start;
 }
