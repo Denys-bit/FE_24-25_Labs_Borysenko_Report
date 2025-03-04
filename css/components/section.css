@@ -44,3 +44,14 @@
     width: 786px;
     text-align: start;
 }
+
+.tech-stack-section .my-tech-stack__title {
+    margin-bottom: 32px;
+}
+
+.tech-stack-section .my-tech-stack__subtitle {
+    margin-bottom: 190px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+}
