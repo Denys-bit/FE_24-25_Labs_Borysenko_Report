@@ -1,0 +1,13 @@
+input, textarea {
+    background: #FFFFFF;
+    border: 1px solid #42446E;
+    border-radius: 8px;
+    min-height: 44px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #666666;
+}
+input::placeholder, textarea::placeholder {
+    color: #666666;
+}

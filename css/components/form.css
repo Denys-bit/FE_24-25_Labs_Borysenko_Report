@@ -1,0 +1,21 @@
+.form > *:not(:last-child) {
+    margin-bottom: 26px;
+}
+.form .form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.form .form-row.flex-end {
+    justify-content: flex-end;
+}
+.form .form-row > *:not(:last-child) {
+    margin-right: 26px;
+}
+.form .form-col {
+    flex: 1 0 0%;
+}
+.form .form-row.cols-auto .form-col {
+    flex: 0 0 auto;
+    width: auto;
+}
