@@ -12,3 +12,19 @@
     flex-shrink: 0;
     width: 30%;
 }
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        padding-bottom: 20%;
+    }
+    .hero-section img {
+        order: -1;
+        margin-bottom: 30px;
+        width: 50%;
+    }
+    .hero-section .title {
+        margin-right: 0;
+        text-align: center;
+    }
+}
