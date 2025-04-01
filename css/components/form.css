@@ -19,3 +19,23 @@
     flex: 0 0 auto;
     width: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .form .form-row.cols-auto .form-col {
+        flex: 1 0 auto;
+        width: auto;
+    }
+    .form .form-col {
+        flex: 1 1 auto;
+        margin-bottom: 12px;
+    }
+    .form .form-row > *:not(:last-child) {
+        margin-right: 0;
+    }
+    .form > *:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .button {
+        width: 100%;
+    }
+}
