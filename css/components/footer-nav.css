@@ -6,3 +6,16 @@
 .nav .list-footer .item-footer {
     margin: 60px 52px 60px 0;
 }
+
+@media screen and (max-width: 668px) {
+    .list-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav .list-footer .item-footer {
+        margin: 20px 0 20px 0;
+    }
+}

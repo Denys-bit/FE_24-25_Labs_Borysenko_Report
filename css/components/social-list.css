@@ -1,12 +1,23 @@
-.social-list {
+.social-list__header {
     display: flex;
     align-items: center;
 }
-.social-list .item {
+.social-list__footer {
+    display: flex;
+    align-items: center;
+}
+.social-list__header .item {
     flex-shrink: 0;
     margin-right: 20px;
 }
-.social-list .item:last-child {
+.social-list__footer .item {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+.social-list__header .item:last-child {
+    margin-right: 0;
+}
+.social-list__footer .item:last-child {
     margin-right: 0;
 }
 .social-list .item .icon {
@@ -130,5 +141,23 @@
     }
     .social-list__mtc .item__mr:nth-child(6) {
         margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .social-list__footer {
+        display: flex;
+        gap: 20px;
+        flex-basis: 58px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .footer hr {
+        margin: 20px 0;
+    }
+    .social-list__header .item {
+        flex-shrink: 0;
+        margin-right: 10px;
     }
 }
