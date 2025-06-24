@@ -1,0 +1,26 @@
+.projects-page .page-content {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.projects-page .page-content .filters {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.projects-page .page-content .filters>* {
+    flex: 1 0 0%;
+}
+
+.projects-page .page-content .filters>*:not(:last-child) {
+    margin-right: 45px;
+}
+
+.projects-page .page-content .subtitle {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.projects-page .page-content .desc {
+    margin-bottom: 5%;
+}

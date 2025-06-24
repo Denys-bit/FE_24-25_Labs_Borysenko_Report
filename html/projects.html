@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" media="all" href="/css/main.css">
+    <link rel="stylesheet" media="all" href="/css/pages/projects.css">
+    <link rel="stylesheet" media="all" href="/css/pages/select.css">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio of a web developer showcasing projects and skills.">
+    <meta name="keywords" content="portfolio, web developer, projects, skills, HTML, CSS, JavaScript, React, SASS">
+    <meta name="author" content="Denys Borysenko">
+</head>
+
+<body class="projects-page">
+    <div class="container">
+        <header class="header">
+            <div class="overlay"></div>
+            <a href="" class="logo">
+                <img src="../img/svg/SvgjsSvg1015.svg" alt="logotype">
+            </a>
+            <nav class="nav">
+                <ul class="list">
+                    <li class="item">
+                        <a class="link" href="index.html">Home</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="about-me.html">About</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="my-tech-stack.html">Tech Stack</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="social-list__header">
+                <li class="item">
+                    <a href="">
+                        <img class="icon" src="../img/svg/Vector.svg" alt="github-icon">
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="">
+                        <img class="icon" src="../img/svg/ant-design_twitter-circle-filled.svg" alt="twitter-icon">
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="">
+                        <img class="icon" src="../img/svg/entypo-social_linkedin-with-circle.svg" alt="linkedin-icon">
+                    </a>
+                </li>
+            </ul>
+            <button class="nav-btn">
+                <span class="nav-btn-line"></span>
+                <span class="nav-btn-line"></span>
+                <span class="nav-btn-line"></span>
+            </button>
+        </header>
+        <div class="page-content">
+            <div class="desc">
+                <h1 class="h1 title">Projects</h1>
+                <p class="subtitle">Things I've built so far</p>
+            </div>
+            <form class="js-filters filters">
+                <select name="technology" class="select" id="technology-select">
+                    <option value="">Technology</option>
+                    <option value="react">React</option>
+                    <option value="java-script">JavaScript</option>
+                    <option value="html">HTML</option>
+                    <option value="sass">SASS</option>
+                </select>
+                <select name="theme" class="select" id="theme-select">
+                    <option value="">Theme</option>
+                    <option value="landing">Landing</option>
+                    <option value="ecommerce">E commerce</option>
+                    <option value="blog">Blog</option>
+                </select>
+                <select name="platform" class="select" id="platform-select">
+                    <option value="">Platform</option>
+                    <option value="web">Web</option>
+                    <option value="ios">Ios</option>
+                    <option value="android">Android</option>
+                </select>
+            </form>
+            <section class="projects-section">
+                <div class="js-projects-container inner"></div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="info">
+                <a class="link contact-info" href="tel:+91 12345 09876">+91 12345 09876</a>
+                <a class="link contact-info" href="mailto:info@example.com">info@example.com</a>
+                <ul class="social-list__footer">
+                    <li class="item">
+                        <a class="link" href="">
+                            <img class="icon-footer" src="../img/svg/github-42446E.svg" alt="github-icon">
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="">
+                            <img class="icon-footer" src="../img/svg/twitter-42446E.svg" alt="twitter-icon">
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="">
+                            <img class="icon-footer" src="../img/svg/linkedin-42446E.svg" alt="linkedin-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <nav class="nav">
+                <ul class="list list-footer">
+                    <li class="item item-footer">
+                        <a class="link" href="index.html">Home</a>
+                    </li>
+                    <li class="item item-footer">
+                        <a class="link" href="about-me.html">About</a>
+                    </li>
+                    <li class="item item-footer">
+                        <a class="link" href="my-tech-stack.html">Tech Stack</a>
+                    </li>
+                    <li class="item item-footer">
+                        <a class="link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="item item-footer">
+                        <a class="link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/projects.js"></script>
+</body>
+
+</html>

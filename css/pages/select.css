@@ -1,0 +1,14 @@
+.select {
+    appearance: none;
+    padding: 13px 50px 13px 20px;
+    width: 100%;
+    background-color: #fff;
+    background-image: url("../../img/svg/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px top 50%;
+    background-size: 24px 24px;
+    border: 1px solid #42446e;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #666;
+}
