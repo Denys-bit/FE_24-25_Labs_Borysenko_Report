@@ -6,7 +6,8 @@
     <link rel="stylesheet" media="all" href="/css/pages/projects.css">
     <link rel="stylesheet" media="all" href="/css/pages/select.css">
     <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Portfolio of a web developer showcasing projects and skills.">
@@ -63,11 +64,14 @@
                 <span class="nav-btn-line"></span>
             </button>
         </header>
+
+
         <div class="page-content">
             <div class="desc">
                 <h1 class="h1 title">Projects</h1>
                 <p class="subtitle">Things I've built so far</p>
             </div>
+
             <form class="js-filters filters">
                 <select name="technology" class="select" id="technology-select">
                     <option value="">Technology</option>
@@ -88,11 +92,22 @@
                     <option value="ios">Ios</option>
                     <option value="android">Android</option>
                 </select>
+                <button type="button" class="btn-cv" aria-label="Toggle view">
+                    <svg data-name="Layer 2" class="view-toggle-icon" id="b09babc4-1eb5-4319-8dce-d138ebd25c12" viewBox="0 0 35 35"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.5,18.75H3.5a1.25,1.25,0,0,1,0-2.5h28a1.25,1.25,0,0,1,0,2.5Z" />
+                        <path d="M31.5,5.455H3.5a1.25,1.25,0,0,1,0-2.5h28a1.25,1.25,0,0,1,0,2.5Z" />
+                        <path d="M31.5,32.045H3.5a1.25,1.25,0,0,1,0-2.5h28a1.25,1.25,0,0,1,0,2.5Z" />
+                    </svg>
+                </button>
             </form>
+
             <section class="projects-section">
                 <div class="js-projects-container inner"></div>
             </section>
         </div>
+
+
         <footer class="footer">
             <div class="info">
                 <a class="link contact-info" href="tel:+91 12345 09876">+91 12345 09876</a>

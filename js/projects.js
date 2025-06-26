@@ -122,46 +122,88 @@ const data = [
         ],
     }
 ];
+
 const projectsContainer = document.querySelector('.js-projects-container');
 const filtersForm = document.querySelector('.js-filters');
+const viewToggleBtn = document.querySelector('.btn-cv');
 const activeFilters = {};
+let isListView = false;
+
 const createProjectTemplate = (project) => {
-    return `
-    <article class="project-card">
-        <img class="img" src="${project.img}" alt="">
+    if (isListView) {
+        return `
+        <article class="project-card project-card--list">
+            <img class="img" src="${project.img}" alt="">
             <div class="content">
                 <h3 class="name">${project.title}</h3>
                 <p class="desc">${project.desc}</p>
                 <p class="stack"><b>Tech stack</b>: ${project.technology.map(item => item.title).join(', ')}</p>
-
                 <p class="stack"><b>Platform</b>: ${project.platform.map(item => item.title).join(', ')}</p>
-
-                <p class="stack"><b>Theme</b>: ${project.theme.map(item => item.title).join(',')}</p>
-
+                <p class="stack"><b>Theme</b>: ${project.theme.map(item => item.title).join(', ')}</p>
                 <div class="actions">
                     <a href="" class="link">
                         <img class="icon" src="../img/svg/akar-icons_link-chain.svg" alt="">
-                            Live Preview
+                        Live Preview
                     </a>
                     <a href="" class="link">
                         <img class="icon" src="../img/svg/akar-icons_github-fill.svg" alt="">
-                            View Code
+                        View Code
                     </a>
                 </div>
             </div>
-    </article>
-            `;
+        </article>
+        `;
+    } else {
+        return `
+        <article class="project-card">
+            <img class="img" src="${project.img}" alt="">
+            <div class="content">
+                <h3 class="name">${project.title}</h3>
+                <p class="desc">${project.desc}</p>
+                <p class="stack"><b>Tech stack</b>: ${project.technology.map(item => item.title).join(', ')}</p>
+                <p class="stack"><b>Platform</b>: ${project.platform.map(item => item.title).join(', ')}</p>
+                <p class="stack"><b>Theme</b>: ${project.theme.map(item => item.title).join(', ')}</p>
+                <div class="actions">
+                    <a href="" class="link">
+                        <img class="icon" src="../img/svg/akar-icons_link-chain.svg" alt="">
+                        Live Preview
+                    </a>
+                    <a href="" class="link">
+                        <img class="icon" src="../img/svg/akar-icons_github-fill.svg" alt="">
+                        View Code
+                    </a>
+                </div>
+            </div>
+        </article>
+        `;
+    }
 };
+
 const dataRender = (data, container) => {
     if (!(typeof data === 'object')) {
         return '';
     }
+
+    if (data.length === 0) {
+        container.innerHTML = '<div class="no-results">There are no items that satisfy the filter</div>';
+        container.classList.remove('inner--list');
+        return;
+    }
+
     let content = '';
     for (let i = 0; i < data.length; i++) {
         content += createProjectTemplate(data[i]);
     }
+
     container.innerHTML = content;
-}
+
+    if (isListView) {
+        container.classList.add('inner--list');
+    } else {
+        container.classList.remove('inner--list');
+    }
+};
+
 const itemIsValid = (dataItem, activeFilters) => {
     let count = 0;
     for (const activeFilterKey in activeFilters) {
@@ -174,11 +216,12 @@ const itemIsValid = (dataItem, activeFilters) => {
     }
     return Object.keys(activeFilters).length === count;
 };
+
 const handleFormChange = (event) => {
     const target = event.target;
-
     const targetValue = target.value;
     const targetName = target.name;
+
     if (targetValue === '') {
         delete activeFilters[targetName];
         if (!Object.keys(activeFilters).length) {
@@ -188,8 +231,22 @@ const handleFormChange = (event) => {
     } else {
         activeFilters[targetName] = targetValue;
     }
+
     const filteredData = data.filter((dataItem) => itemIsValid(dataItem, activeFilters));
     dataRender(filteredData, projectsContainer);
 };
+
+const handleViewToggle = () => {
+    isListView = !isListView;
+
+    const filteredData = Object.keys(activeFilters).length === 0
+        ? data
+        : data.filter((dataItem) => itemIsValid(dataItem, activeFilters));
+
+    dataRender(filteredData, projectsContainer);
+};
+
 filtersForm.addEventListener('change', handleFormChange);
+viewToggleBtn.addEventListener('click', handleViewToggle);
+
 dataRender(data, projectsContainer);
