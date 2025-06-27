@@ -44,3 +44,16 @@ ___
 ![image](https://github.com/user-attachments/assets/dcf86843-6013-4337-98c2-e4de5d50d7f6)
 Рисунок 6 – Footer
 ___
+
+## Лабораторна робота №4 | Виконання самостійних робіт
+Результати в вигляді скріншотів:
+![image](https://github.com/user-attachments/assets/7a310f41-09ce-4c05-a5fc-107a3bcf149e)
+Рисунок 1 — Відсутні елементи, які задовільняють фільтрацію.
+![image](https://github.com/user-attachments/assets/4d202fa7-6359-4226-8990-e11178dca82e)
+Рисунок 2 — Виконано фільтрацію, знайдено один елемент, який представлено в вигляді "Списку"
+![image](https://github.com/user-attachments/assets/0b53457e-6889-4b5c-a4f5-719a92c175a3)
+Рисунок 3 — Картки в вигляді "плиток", початковий вигляд сторінки.
+___
+
+
+
